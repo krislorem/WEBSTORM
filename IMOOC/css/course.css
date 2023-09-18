@@ -1,15 +1,10 @@
 /* 新上好课整体布局开始 */
 #new-course {
     padding: 32px 0;
-
 }
 
 .new-course-box {
     height: 634px;
-}
-
-.new-course-box .title {
-    height: 36px;
 }
 
 .new-course-box .new-course-list {
@@ -133,5 +128,3 @@
 }
 
 /* 课程列表结束 */
-
-/* 两侧广告 */

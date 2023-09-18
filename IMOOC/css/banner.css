@@ -8,13 +8,11 @@
 
 .banner-box {
     height: 482px;
-    /* background-color: rgb(134, 181, 198); */
 }
 
 
 .g-banner {
     height: 382px;
-    /* background-color: rgb(226, 192, 192); */
 }
 
 .course-list {
@@ -70,7 +68,6 @@
 .course-list .iconfont {
     float: right;
     font-size: 10px;
-    /* background: rgba(255, 255, 255, .1); */
 }
 
 /* 课程分类列表结束 */
@@ -192,7 +189,8 @@
 }
 
 .sys-icon:hover {
-    transform: translateY();
+    transform: rotate(30deg);
+    opacity: .5;
 }
 
 /* 滚动课程 */
@@ -202,14 +200,14 @@
 }
 
 .sk-list ul {
-    position:absolute;
+    position: absolute;
     left: 0;
     width: 2800px;
 }
 
 .sk-list ul li {
     position: relative;
-    float:left;
+    float: left;
     width: 234px;
     height: 270px;
     margin-left: 6px;
@@ -226,17 +224,17 @@
     color: #333;
 }
 
-.sk-list ul li .difficulty{
+.sk-list ul li .difficulty {
     position: absolute;
     left: 10px;
-    bottom: 45px;
+    bottom: 40px;
     font-size: 12px;
 }
 
-.sk-list ul li .price{
+.sk-list ul li .price {
     position: absolute;
     left: 10px;
     bottom: 15px;
-    color:#ec1500;
+    color: #ec1500;
     font-weight: 600;
 }

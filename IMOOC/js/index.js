@@ -260,9 +260,12 @@
         //循环为所有的 a 绑定点击事件
         tabs[i].onclick = function () {
             for (let j = 0; j < tabs.length; j++) {
-                //清除所有的 a 和 ul 的样式
-                tabs[i].className = '';
+                //清除所有的 a 的样式
                 uls[j].className = '';
+            }
+            for (let j = 0; j < tabs.length; j++) {
+                //清除所有的 ul 的样式
+                tabs[j].className = '';
             }
             //给当前选中的 a 和 ul 添加样式
             tabs[i].className = 'active';

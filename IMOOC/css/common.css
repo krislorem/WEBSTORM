@@ -17,7 +17,7 @@
 .clearfix:after {
     visibility: hidden;
     clear: both;
-    display: block; 
+    display: block;
     content: ".";
     height: 0;
 }
@@ -37,10 +37,10 @@
 /* 白色背景 */
 .bg-white {
     background-color: #fff;
-} 
+}
 
 /* 文字截取2行 */
-.ellipsis2{
+.ellipsis2 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
