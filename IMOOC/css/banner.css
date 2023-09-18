@@ -1,0 +1,242 @@
+/* banner 整体布局开始 */
+#banner {
+    /* 把 banner-box 挤到中间 */
+    padding: 32px 0;
+    /* 这个过渡,是为了渐变背景的切换 */
+    transition: 1s;
+}
+
+.banner-box {
+    height: 482px;
+    /* background-color: rgb(134, 181, 198); */
+}
+
+
+.g-banner {
+    height: 382px;
+    /* background-color: rgb(226, 192, 192); */
+}
+
+.course-list {
+    width: 256px;
+    height: 382px;
+    background-color: #39364d;
+    color: #fff;
+    border-radius: 8px 0 0 0;
+}
+
+.swiper {
+    width: 896px;
+    height: 382px;
+    border-radius: 0 8px 0 0;
+    /* 父相子绝,内部的切换按钮,圆点就可以绝对定位 */
+    position: relative;
+}
+
+.sys-class {
+    height: 100px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 30%);
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+/* banner 整体布局结束 */
+
+/* 课程分类列表开始 */
+.course-list ul {
+    margin-top: 20px;
+}
+
+.course-list li {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.course-list li:hover {
+    background: rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+.course-list .title {
+    font-size: 14px;
+}
+
+.course-list .sub-title {
+    font-size: 12px;
+}
+
+.course-list .iconfont {
+    float: right;
+    font-size: 10px;
+    /* background: rgba(255, 255, 255, .1); */
+}
+
+/* 课程分类列表结束 */
+
+/* 轮播图 */
+.swiper a {
+    display: block;
+    width: 896px;
+    height: 382px;
+    background-image: url("../images/swiper/swiper-1.jpg");
+    background-size: 896px;
+    background-size: cover;
+    border-radius: 0 8px 0 0;
+    /* 1秒内完成切换,过渡效果 */
+    transition: 1s;
+}
+
+/* 左右切换按钮 */
+.swiper .arrow {
+    position: absolute;
+    /* 垂直居中: 离顶部50%-自身高度的一半 */
+    top: 50%;
+    margin-top: -24px;
+    width: 48px;
+    height: 48px;
+    /* 同时设定背景色,背景图,背景图位置,尺寸 */
+    background: rgba(28, 31, 33, .2) url(../images/icon-left-small.png) no-repeat center/16px auto;
+    border-radius: 50%;
+    color: #fff;
+    transition: .5s;
+}
+
+.swiper .arrow:hover {
+    background-color: rgba(28, 31, 33, .5);
+    transition: .5s;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+    /*右三角形用左三角形水平翻转180度即可 */
+    transform: rotate(180deg);
+}
+
+/* 切图圆点 */
+.circle-list {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+.circle-list li {
+    cursor: pointer;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .75);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.circle-list li.current {
+    width: 20px;
+}
+
+/* 下方体系课 */
+.sys-icon-box {
+    display: inline-block;
+    padding: 0 16px;
+    background: #fff;
+    margin-left: 15px;
+}
+
+.sys-icon-box .sys-icon {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.sys-icon-box .title:hover h4 {
+    color: #ec1500;
+}
+
+.sys-icon-box h4 {
+    font-size: 14px;
+}
+
+.sys-icon-box p {
+    font-size: 12px;
+}
+
+.sys-class .line {
+    display: inline-block;
+    width: 2px;
+    height: 40px;
+    background-color: #e8e8e8;
+}
+
+.sys-class .more-btn {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 5px;
+}
+
+.sys-class .more-btn .iconfont {
+    font-size: 12px;
+}
+
+.sys-icon {
+    transform: .2s;
+}
+
+.sys-icon:hover {
+    transform: translateY();
+}
+
+/* 滚动课程 */
+.sk-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.sk-list ul {
+    position:absolute;
+    left: 0;
+    width: 2800px;
+}
+
+.sk-list ul li {
+    position: relative;
+    float:left;
+    width: 234px;
+    height: 270px;
+    margin-left: 6px;
+    background-color: #fff;
+}
+
+.sk-list ul li img {
+    width: 234px;
+}
+
+.sk-list ul li .title {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.sk-list ul li .difficulty{
+    position: absolute;
+    left: 10px;
+    bottom: 45px;
+    font-size: 12px;
+}
+
+.sk-list ul li .price{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    color:#ec1500;
+    font-weight: 600;
+}

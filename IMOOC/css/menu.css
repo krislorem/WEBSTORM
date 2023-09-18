@@ -1,0 +1,23 @@
+#menu{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    background-image: url(../images/bg-left.png);
+    background-repeat: no-repeat;
+    background-size: 128px auto;
+    padding-top: 192px;
+    background-color: #D72622;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+    z-index: 100;
+    user-select: none;
+}
+
+#menu li {
+    padding: 16px;
+    cursor: pointer;
+    transition: .2s;
+}

@@ -1,0 +1,65 @@
+/* 秒杀拼团整体布局开始 */
+#sk {
+    padding: 20px 0;
+    /* background-color: lightblue; */
+}
+
+.sk-box {
+    height: 342px;
+}
+
+.sk-box h3 {
+    height: 72px;
+    /* background-color: #fff; */
+}
+
+.sk-box h3 img {
+    width: 180px;
+}
+
+.sk-box .countdown {
+    width: 185px;
+    height: 270px;
+    background-color: #E94443;
+}
+
+.sk-box .sk-list {
+    width: 960px;
+    height: 270px;
+    /* background-color: rgb(155, 184, 108); */
+}
+
+/* 秒杀拼团整体布局结束 */
+
+/* 倒计时 */
+.countdown {
+    color: #fff;
+    text-align: center;
+}
+
+.sk-box .countdown h4 {
+    margin-top: 20px;
+    font-size: 20px;
+} 
+
+.sk-box .countdown .iconfont {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.sk-box .countdown p {
+    margin-top: 20px;
+}
+
+.timer {
+    margin-top: 20px;
+}
+
+.timer div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #333;
+}
